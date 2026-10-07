@@ -405,9 +405,9 @@ function showResult() {
   document.getElementById('result-score').textContent = nota;
 
   const details = document.getElementById('result-details');
-  let detailsHTML = `<div class="text-center"><p class="text-2xl font-700 text-indigo-400">${scores[0]}/15</p><p class="text-slate-500">1ª Tentativa</p></div>`;
+  let detailsHTML = `<div class="text-center"><p class="text-2xl font-700 text-indigo-400">${scores[0]}/20</p><p class="text-slate-500">1ª Tentativa</p></div>`;
   if (attempt === 2) {
-    detailsHTML += `<div class="text-center"><p class="text-2xl font-700 text-purple-400">${scores[1]}/15</p><p class="text-slate-500">2ª Tentativa</p></div>`;
+    detailsHTML += `<div class="text-center"><p class="text-2xl font-700 text-purple-400">${scores[1]}/20</p><p class="text-slate-500">2ª Tentativa</p></div>`;
   }
   details.innerHTML = detailsHTML;
 
